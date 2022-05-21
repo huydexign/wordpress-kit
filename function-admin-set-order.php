@@ -1,3 +1,4 @@
+<?php
 ##### [SET POSTS ORDER]
 function set_post_order_in_admin( $wp_query ) {
   if ( is_admin() ) {
@@ -6,3 +7,4 @@ function set_post_order_in_admin( $wp_query ) {
   }
 }
 add_filter('pre_get_posts', 'set_post_order_in_admin' );
+?>
